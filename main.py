@@ -4,11 +4,11 @@ from LA import Lexer
 
 if __name__ == "__main__":
     input_files = ["test_case1.txt", "test_case2.txt", "test_case3.txt"]
-    output_file = "lexer_output.txt"
+    output_file = "output.txt"
 
     # Clear the output file before starting
     with open(output_file, 'w') as f:
-        f.write("Lexical Analysis Output:\n")
+        f.write("Lexical and Syntax Analysis Output:\n")
         f.write("=" * 40 + "\n")
 
     # Process each input file
@@ -43,4 +43,4 @@ if __name__ == "__main__":
                 f.write(f"Error: File '{input_file}' not found.\n")
                 f.write(f"{'-'*40}\n\n")
 
-    print(f"Lexical analysis complete. Output written to {output_file}.")
+    print(f"Lexical and Syntax analysis complete. Output written to {output_file}.")
