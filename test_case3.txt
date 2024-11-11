@@ -1,0 +1,41 @@
+function findMax(a, b, c) {
+    integer max;
+    
+    if (a > b) {
+        if (a > c) {
+            max = a;
+        } else {
+            max = c;
+        }
+    } else {
+        if (b > c) {
+            max = b;
+        } else {
+            max = c;
+        }
+    }
+    
+    return max;
+}
+
+function main() {
+    integer x;
+    integer y;
+    integer z;
+    integer result;
+    boolean isLarge;
+
+    x = 5;
+    y = 20;
+    z = 15;
+
+    result = findMax(x, y, z);
+
+    if (result > 10) {
+        isLarge = true;
+        put("The maximum value is large:", result);
+    } else {
+        isLarge = false;
+        put("The maximum value is small:", result);
+    }
+}
