@@ -1,0 +1,26 @@
+function calculateSum() {
+    integer sum;
+    integer i;
+    integer limit;
+    limit = 10;
+    sum = 0;
+
+    while (i <= limit) {
+        sum = sum + i;
+        i = i + 1;
+    }
+
+    if (sum > 50) {
+        put("Sum is greater than 50");
+    } else {
+        put("Sum is 50 or less");
+    }
+
+    return sum;
+}
+
+function main() {
+    integer result;
+    result = calculateSum();
+    put("Result:", result);
+}
