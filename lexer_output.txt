@@ -1,0 +1,511 @@
+Lexical Analysis Output:
+========================================
+
+----------------------------------------
+              Test Case 1               
+----------------------------------------
+s = t + y;
+
+function main() {
+    integer x;
+    integer y;
+    x = 10;
+    y = 20;
+    if (x < y) {
+        x = x + y;
+    }
+    return x;
+}
+
+----------------------------------------
+Token          Lexeme         
+------------------------------
+identifier     s              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       =              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     t              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       +              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     y              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+keyword        function       
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     main           
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      (              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      )              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      {              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+keyword        integer        
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     x              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+keyword        integer        
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     y              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     x              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       =              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+integer        10             
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     y              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       =              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+integer        20             
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+keyword        if             
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      (              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     x              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       <              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     y              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      )              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      {              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     x              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       =              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     x              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+operator       +              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     y              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      }              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+keyword        return         
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+identifier     x              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      ;              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+separator      }              
+Parsing Rules:
+----------------------------------------
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime>
+<Factor> -> <Identifier>
+Token: Identifier Lexeme: s
+<Term Prime> -> * <Factor> <Term Prime> | / <Factor> <Term Prime> | epsilon
+<Term Prime> -> epsilon
+<Expression Prime> -> + <Term> <Expression Prime> | - <Term> <Expression Prime> | epsilon
+<Expression Prime> -> epsilon
+----------------------------------------
+
+
+----------------------------------------
+              Test Case 2               
+----------------------------------------
+Empty source code. No tokens to display.
+----------------------------------------
+
+
+----------------------------------------
+              Test Case 3               
+----------------------------------------
+Empty source code. No tokens to display.
+----------------------------------------
+

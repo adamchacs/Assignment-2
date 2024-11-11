@@ -1,0 +1,12 @@
+s = t + y;
+
+function main() {
+    integer x;
+    integer y;
+    x = 10;
+    y = 20;
+    if (x < y) {
+        x = x + y;
+    }
+    return x;
+}
