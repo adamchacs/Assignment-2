@@ -1,4 +1,4 @@
-Lexical Analysis Output:
+Lexical and Syntax Analysis Output:
 ========================================
 
 ----------------------------------------
